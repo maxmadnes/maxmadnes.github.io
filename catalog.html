@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <title>Sedona-Гостиницы</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <ul class="top-menu">
+                        <li><a href="index.html">Информация</a></li>
+                        <li><a href="#">Фото и Видео</a></li>
+                        <li><a href="index.html" class="top-logo" ><img src="img/top-logo.png" width="138" height="70" alt="City of Sedona"></a></li>
+                        <li><a href="#">Карта штата</a></li>
+                        <li><span class="active-menu">Гостиницы</span></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="catalog-bg clearfix">
+                    <div class="search-form clearfix">
+                        <form class="check-form" action="https://echo.htmlacademy.ru" method="post">
+                            <fieldset title="Инфраструктура" class="point">
+                                <legend>Инфраструктура:</legend>
+                                <input type="checkbox" name="pool" id="pool" checked><label for="pool">Бассейн</label>
+                                <input type="checkbox" name="park" id="park"><label for="park">Парковка</label>
+                                <input type="checkbox" name="wifi" id="wifi"><label for="wifi">Wi-Fi</label>
+                            </fieldset>
+                            <fieldset title="Жилье" class="point">
+                                <legend>Тип Жилья:</legend>
+                                <input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label>
+                                <input type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label>
+                                <input type="checkbox" name="apartment" id="apartment" checked><label for="apartment">Апартаменты</label>
+                            </fieldset>
+                            <fieldset title="Расчет стоимости" class="day-cost clearfix">
+                                <div class="filter-range">
+                                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                                    <div class="price-controls">
+                                        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                                    </div>
+                                    <div class="range-controls">
+                                        <div class="scale">
+                                            <div class="bar"></div>
+                                        </div>
+                                        <div class="range-toggle range-toggle-min"></div>
+                                        <div class="range-toggle range-toggle-max"></div>
+                                    </div>
+                                    <button class="btn-transparent" type="submit">Показать</button>
+                                </div>
+                            </fieldset> 
+                        </form>
+                    </div>
+                </div>
+                <div class="found clearfix">
+                    <div class="found-sum">
+                        <span>Найдено: 3</span>
+                    </div>
+                    <div class="found-sort">
+                        <ul>
+                            <li><span class="found-title">Сортировка:</span></li>
+                            <li><a href="#" class="active" id="by-cost">По цене</a></li>
+                            <li><a href="#" id="by-type">По типу</a></li>
+                            <li><a href="#" id="by-raiting">По рейтингу</a></li>  
+                        </ul>  
+                    </div>
+                    <div class="sort-btn">
+                        <a href="#" class="sort-up"></a>
+                        <a href="#" class="sort-down active"></a>
+                    </div>
+                </div>
+                <div class="show-result clearfix">
+                    <div class="result-found clearfix">
+                        <div class="mini-image">
+                            <img src="img/amara-img.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
+                        </div>
+                        <div class="result-title">
+                            <a href="#" class="title"> Amara Resort &amp; Spa</a>
+                            <div class="typen-cost clearfix">
+                                <div class="type" >Гостиница</div>
+                                <div class="total-from">От 3500 Р.</div>
+                            </div>
+                            <div class="more-block">
+                                <a class="info" href="#"><span>Подробнее</span></a>
+                                <a class="book-room" href="#"><span>Забронировать</span></a>
+                            </div> 
+                        </div>
+                        <div class="count-block clearfix">
+                            <div class="star-count">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="number-raiting">Рейтинг: 8.5</div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="show-result clearfix">
+                    <div class="result-found clearfix">
+                        <div class="mini-image">
+                            <img src="img/desert-img.jpg" width="135" height="90" alt="Desert Quail Inn">
+                        </div>
+                        <div class="result-title">
+                            <a href="#" class="title">Desert Quail Inn</a>
+                            <div class="typen-cost clearfix">
+                                <div class="type" >Мотель</div>
+                                <div class="total-from">От 2000 Р.</div>
+                            </div >
+                            <div class="more-block">
+                                <a class="info" href="#"><span>Подробнее</span></a>
+                                <a class="book-room" href="#"><span>Забронировать</span></a>
+                            </div > 
+                        </div>
+                        <div class="count-block clearfix">
+                            <div class="star-count">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <div class="number-raiting">Рейтинг: 8.9</div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="show-result clearfix">
+                    <div class="result-found clearfix">
+                        <div class="mini-image">
+                            <img src="img/villas-img.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                        </div>
+                        <div class="result-title">
+                            <a href="#" class="title">Villas at Poco Diablo</a>  
+                            <div class="typen-cost clearfix">
+                                <div class="type" >Апартаменты</div>
+                                <div class="total-from">От 4000 Р.</div>
+                            </div>
+                            <div class="more-block">
+                                <a class="info" href="#"><span>Подробнее</span></a>
+                                <a class="book-room" href="#"><span>Забронировать</span></a>
+                            </div>  
+                        </div>
+                        <div class="count-block clearfix">
+                            <div class="star-count">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>  
+                            </div>
+                            <div class="number-raiting">Рейтинг: 9.2</div>
+                        </div> 
+                    </div>
+                </div>
+            </main>
+            <footer class="main-footer clearfix">
+                <div class="footer-box">
+                    <a  class="footer-contacts" href="#">#Visitsedona</a>
+                    <div class="footer-social">
+                        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+                        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                        <a class="social-btn social-btn-ytb" href="#">Ютьюб</a>
+                    </div>
+                    <p class="footer-copyright">Website by<cite><a href="#" class="domain"></a></cite></p>
+                </div>
+            </footer>
+        </div> 
+    </body>
+</html>

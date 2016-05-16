@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <title>Sedona</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <ul class="top-menu">
+                        <li><span class="active-menu">Информация</span></li>
+                        <li><a href="#">Фото и Видео</a></li>
+                        <li><a href="index.html" class="top-logo"><img  src="img/top-logo.png" width="138" height="70" alt="City of Sedona"></a></li>
+                        <li><a href="#">Карта штата</a></li>
+                        <li><a href="catalog.html">Гостиницы</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="index-bg clearfix">
+                    <div class="index-logo ">
+                        <div class="logo-title">Welcome -- to the gorgeous --</div>
+                        <h1 class="logo-name">Sedona</h1>
+                        <div class="logo-description">"Because the Grand Canyon sucks!"</div>
+                    </div>
+                </div>
+                <section class="features">
+                    <div class="features-discription">
+                        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+                        <p>Рассмотрим 5 причин, по которым Седона круче,чем Гранд Каньен!</p>
+                    </div>
+                    <div class="clearfix">
+                        <div class="reason-top">
+                            <b class="reason-name">Настоящий городок</b>
+                            <div class="reason-number">
+                                <span>№1</span> 
+                            </div>
+                            <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>
+                        </div> 
+                        <div class="rlogo-top">
+                            <img src="img/reason-one.jpg" width="800" height="256" alt="Седона - не аттракцион для туристов">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="some-reason">
+                            <h2 class="some-name">Жилье</h2>
+                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        </div>
+                        <div class="some-reason">
+                            <h2 class="some-name">Еда</h2>
+                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        </div>
+                        <div class="some-reason">
+                            <h2 class="some-name">Сувениры</h2>
+                            <p>Не только Китайского, но местного производства!</p>
+                        </div>
+                    </div>
+                    <div class="clearfix reason-bg">
+                        <div class="reason-botom">
+                            <b class="reason-name">Там есть мост дьявола</b>
+                            <div class="reason-number">
+                                <span>№2</span>
+                            </div>
+                            <p>Да, по нему можно пройти! Если вы конечно осмелитесь</p>
+                        </div>
+                        <div class="rlogo-botom">
+                            <img src="img/reason-two.jpg" width="800" height="256" alt="Там есть мост дьявола">
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="last-reason">
+                            <h2 class="last-name">Небольшая площадь</h2>
+                            <div class="last-num">
+                                <span>№3</span> 
+                            </div> 
+                            <p>Все достопремичательности находятс очень близко</p>
+                        </div>
+                        <div class="last-reason">
+                            <h2 class="last-name">Красивая дорога</h2>
+                            <div class="last-num">
+                                <span>№4</span>  
+                            </div> 
+                            <p>Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
+                        </div>
+                        <div class="last-reason">
+                            <h2 class="last-name">Мало туристов</h2>
+                            <div class="last-num">
+                                <span>№5</span>   
+                            </div>     
+                            <p>Большенсто едет в Гранд Каньен и толпится там</p>
+                        </div>
+                    </div>
+                </section>
+                <div  class="search-title">
+                    <h2>Заинтересовались?</h2>
+                    <p>Укажите предполагаемые даты поездки,<br/> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                </div>  
+                <div class="search-content">
+                    <div class="search-box">                           
+                    <div class="form-title toggle-button clearfix">
+                        <h2>Поиск гостиницы в Седоне</h2>
+                        </div>
+                        <form class="appointment-form show-content" action="https://echo.htmlacademy.ru" method="get">
+                            <fieldset title="Укажите дату вьезда" class="clearfix chose-date">
+                                <label for="date-in">Дата вьезда:</label>
+                                <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2016" required>
+                            </fieldset>
+                            <fieldset title="Укажите дату вьезда" class="clearfix chose-date">
+                                <label for="date-out">Дата выезда:</label>
+                                <input type="text" name="date-out" id="date-out" placeholder="4 июля 2016" required>
+                            </fieldset>  
+                            <fieldset class="cearfix man-child">
+                                <fieldset class="man">
+                                    <label for="man-in">Взрослые:</label>
+                                    <input type="button" value="-" id="man-remove" name="man-remove">
+                                    <input type="text" id="man-in" value="2">
+                                    <input type="button" value="+" id="man-add" name="man-add">
+                                </fieldset> 
+                                <fieldset class="child">
+                                    <label for="child-in">Дети:</label>
+                                    <input type="button" value="-" id="child-remove" name="child-remove">
+                                    <input type="text" id="child-in" value="0">
+                                    <input type="button" value="+" id="child-add" name="child-add">
+                                </fieldset>   
+                            </fieldset>  
+                            <input type="submit" name="button-search" value="Найти">
+                        </form>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4905.023266832994!2d-111.7660777577036!3d34.86350551655949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x69de7181eb3a95fc!2sSedona+Motel!5e0!3m2!1sru!2sru!4v1462897541969" width="1200" height="473" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </main>
+            <footer class="main-footer clearfix">
+                <div class="footer-box">
+                    <a  class="footer-contacts" href="#">#Visitsedona</a>
+                    <div class="footer-social">
+                        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+                        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                        <a class="social-btn social-btn-ytb" href="#">Ютьюб</a>
+                    </div>
+                    <p class="footer-copyright">Website by<cite><a href="#" class="domain"></a></cite></p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

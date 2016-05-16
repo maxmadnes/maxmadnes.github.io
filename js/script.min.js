@@ -1,0 +1,1 @@
+var show=document.querySelector(".toggle-button"),popup=document.querySelector(".appointment-form");show.addEventListener("click",function(a){a.preventDefault(),popup.classList.toggle("show-content")});
